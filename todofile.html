@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO LIST</title>
+	<style type="text/css">
+		body{
+			background-color: maroon;
+		}
+		ul,button{
+			color:blue;
+		}
+
+
+h1 {border-style: solid;
+	border-color: blue;
+	background: pink;
+
+
+}
+ul li:nth-child(odd){
+color: red;
+	}
+
+
+button:nth-child(odd){
+color: red;
+	}
+	
+	</style>
+}
+</head>
+<body>
+
+
+	<div class="div1">
+		
+<center><h1 style="color:blue;">TO-do App</h1>
+<center><input type="text" id="text1" placeholder="Enter text"></center>
+<center><input type="button" id="btn"style="color:blue;" value="Click me"></center>
+<ul id="para"></ul>
+</div>
+<script type="text/javascript">
+	var e=document.getElementById("text1")
+	var e1=document.getElementById("btn")
+	e1.addEventListener('click',testclick)
+	function testclick(){
+		var e2=document.getElementById("para")
+		var e3=document.createElement("li")
+		var e4=document.createElement("button")
+		e4.textContent="delete"
+		e3.textContent=e.value
+		e3.appendChild(e4)
+		e2.appendChild(e3)
+		e.value=""
+	}
+</script>
+</body>
+</html>
